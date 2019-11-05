@@ -20,7 +20,7 @@ import {
 function App() {
     return (
         <div className="App">
-            {/*<CounterClass />*/}
+            <CounterClass />
             {/*<CounterClassFieldClass />*/}
             {/*<CounterFunctional />*/}
             {/*<CounterFunctionalShort />*/}
@@ -32,7 +32,7 @@ function App() {
             {/*<ClockFunctional />*/}
             {/*<ClockFunctionalCustomHook />*/}
 
-            <DataFetchingFunctionalCustomHook />
+            {/*<DataFetchingFunctionalCustomHook />*/}
         </div>
     )
 }
