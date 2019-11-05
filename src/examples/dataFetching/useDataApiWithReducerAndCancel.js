@@ -26,7 +26,7 @@ const dataFetchReducer = (state, action) => {
     }
 }
 
-export const useDataApi = (initialUrl, initialData) => {
+export const useDataApiWithReducerAndCancel = (initialUrl, initialData) => {
     const [url, setUrl] = useState(initialUrl)
     const [state, dispatch] = useReducer(dataFetchReducer, {
         isLoading: false,
@@ -54,7 +54,9 @@ export const useDataApi = (initialUrl, initialData) => {
             }
         }
 
-        fetchData()
+        if (url) {
+            fetchData()
+        }
 
         return () => {
             didCancel = true

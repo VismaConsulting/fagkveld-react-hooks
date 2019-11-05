@@ -1,10 +1,11 @@
 import React from 'react'
+import './Article.css'
 
-export default function Article(props) {
+export default function Article({ content }) {
     return (
-        <article style={{ border: '1px solid' }}>
-            <h1>{props.content.title}</h1>
-            <p>{props.content.body}</p>
+        <article className="Article">
+            <h1>{content.title}</h1>
+            <p>{content.body}</p>
         </article>
     )
 }

@@ -1,32 +1,38 @@
 import React from 'react'
 import './App.css'
 import {
-    ClassCounter,
-    ClassFieldCounter,
-    FunctionalCounter,
-    ShortFunctionalCounter
-} from './examples/Counter'
+    ClockClass,
+    ClockFunctional,
+    ClockFunctionalCustomHook
+} from './examples/clock'
+import {
+    CounterClass,
+    CounterClassFieldClass,
+    CounterFunctional,
+    CounterFunctionalShort
+} from './examples/counter'
 import {
     DataFetchingClass,
-    DataFetchingFunction1
-} from './examples/DataFetching'
-import { ClockClass, ClockFunction } from './examples/Clock'
-import { DataFetchingCustomHook } from './examples/DataFetchingCustomHook'
+    DataFetchingFunctional,
+    DataFetchingFunctionalCustomHook
+} from './examples/dataFetching'
 
 function App() {
     return (
         <div className="App">
-            {/*<ClassCounter />*/}
-            {/*<ClassFieldCounter />*/}
-            {/*<FunctionalCounter />*/}
-            {/*<ShortFunctionalCounter />*/}
+            {/*<CounterClass />*/}
+            {/*<CounterClassFieldClass />*/}
+            {/*<CounterFunctional />*/}
+            {/*<CounterFunctionalShort />*/}
 
             {/*<DataFetchingClass />*/}
-            {/*<DataFetchingFunction1 />*/}
-            <DataFetchingCustomHook />
+            {/*<DataFetchingFunctional />*/}
 
             {/*<ClockClass />*/}
-            {/*<ClockFunction />*/}
+            {/*<ClockFunctional />*/}
+            {/*<ClockFunctionalCustomHook />*/}
+
+            <DataFetchingFunctionalCustomHook />
         </div>
     )
 }
