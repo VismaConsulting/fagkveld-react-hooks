@@ -8,7 +8,7 @@ export function ClockFunctional() {
         return () => {
             clearInterval(timerID)
         }
-    })
+    }, [])
 
     function tick() {
         setDate(new Date())
